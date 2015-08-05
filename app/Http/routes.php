@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $controller = new \App\Http\Controllers\SoapController();
+
+    return $controller->demo();
 });
