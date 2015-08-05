@@ -144,6 +144,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Vendor Service Providers...
+         */
+        Artisaninweb\SoapWrapper\ServiceProvider::class,
     ],
 
     /*
@@ -192,6 +196,10 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
+        /*
+         * Aliases Vendor Providers...
+         */
+        'SoapWrapper' => Artisaninweb\SoapWrapper\Facades\SoapWrapper::class,
     ],
 
 ];
